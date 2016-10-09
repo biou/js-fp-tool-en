@@ -1,14 +1,14 @@
 /**
-Objectif: "jouer" les notes sur un clavier virtuel.
-Afficher un clavier virtuel. Lorsque chaque note doit être jouée, changer le style de la touche correspondante.
-Le clavier fourni a des touches avec un id de la forme "kXX" avec XX la note correspondant à la touche.
-Chaque touche peut avoir la classe "pressed" qui simule l'appui sur la touche.
+Goal: play notes on a virtual keyboard.
+Display a virtual keyboard. When each note should be played, change the style of the corresponding key.
+The provided keyboard has its keys with an id of the form "kXX" where XX is the note corresponding to the key.
+Each key can have the class "pressed" to emulate pressing the key.
 
-Astuce: créer une fonction nextNote(track, index) qui 
-- gère la classe "pressed"
-- et utilise setTimeout(function, note.deltaTime * 3)
+Tips and tricks: create a function nextNote(track, index) which
+- manage the "pressed" class
+- use setTimeout(function, note.deltaTime *3)
 
-Structure MIDI
+MIDI Structure
 {
   header:{
     ...
@@ -26,13 +26,13 @@ Structure MIDI
 
 */
 
-// ajout du clavier virtuel
+// adds a virtual keyboard
 document.getElementById('sandbox').innerHTML = F.keyboard();
 
-// ajouter / retirer la classe "pressed" d'une touche
+// adds / removes the "pressed" class on a key
 document.getElementById('k69').classList.toggle('pressed', true);
 
-// récupérer les notes
+// get notes
 var track = F.simpleTrack().filter(F.isNote);
 
 

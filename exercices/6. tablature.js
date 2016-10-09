@@ -1,8 +1,8 @@
 /**
-Objectif: afficher la partition de la track.
-Ne pas gérer les durées des notes.
+Goal: display the music sheet of the track
+Do not manage the duration of notes.
 
-Structure MIDI
+MIDI Structure
 { header: { ... },
   tracks: [
     [
@@ -18,13 +18,13 @@ Structure MIDI
 
 var track = F.simpleTrack();
 
-// créer la tablature
+// create the music sheet
 var sheet = F.musicSheet();
 
-// placer les notes 4 par 4 sur la tablature
-// avec sheet.addNotes( tableau )
+// put notes 4 by 4 on the sheet
+// with sheet.addNotes( array )
 
-// par exemple
+// for example
 sheet.addNotes([
   F.eventToNoteName({ noteNumber:65 }),
   F.eventToNoteName({ noteNumber:61 }),

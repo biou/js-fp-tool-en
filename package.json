@@ -1,7 +1,7 @@
 {
-  "name": "parisweb-funcprog",
+  "name": "jxlux-funcprog",
   "version": "1.0.0",
-  "description": "Paris Web - Programmation fonctionnelle",
+  "description": "JSLuxembourg - functional programming",
   "main": "main.js",
   "scripts": {
     "start": "./node_modules/.bin/jsdoc -t ./doc-template -d doc js/functional.js && electron ."

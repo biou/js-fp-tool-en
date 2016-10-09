@@ -1,12 +1,12 @@
 /**
-Objectif: modifier la track 0 de `midi` pour répéter 
-chaque note une fois avec un léger décalage de 20 beats 
-et avec une vélocité divisée par 2
+Goal: change track 0 of `midi` to repeat
+each note one time with a shift of 20 beats
+and with a velocity divided by 2
 
-Astuce: en midi 1 beat = une unité de temps. C'est une unité relative paramétrée
-par un attribut des headers de la track, ticksPerBeat
+Tips & tricks: 1 beat = 1 time unit. It is a relative unite parameterized by an attribute
+in the headers of the track, ticksPerBeat
 
-Structure MIDI
+MIDI Structure
 { header: { ... },
   tracks: [
     [
@@ -23,7 +23,7 @@ Structure MIDI
 
 function transpose (note, dtime, velocity) {
   return F.extend(note, {
-    // attributs à remplacer
+    // attributes to be replaced
   })
 }
 

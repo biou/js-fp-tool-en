@@ -1,19 +1,20 @@
 /**
-Objectif: modifier la track 0 de `midi` 
-Pour chaque note, ajouter 2 notes décalées de 50 ticks et de 2 tons
+Goal: change track 0 of `midi`
+for each note, add 2 notes shifted by 50 ticks and of 2 tones
 
-Astuce: en midi, +1 sur un noteNumber augmente la note d'un demi-ton.
-Astuce: en midi 1 beat = une unité de temps. C'est une unité relative paramétrée
-par un attribut des headers de la track, ticksPerBeat
-Astuce: en ajoutant des notes, on décale chaque temps
-car le MIDI travaille en temps relatif
+Tips & tricks:
+-  +1 on a noteNumber increases the note of a semitone.
+- 1 beat = 1 time unit. It is a relative unite parameterized by an attribute
+  in the headers of the track, ticksPerBeat
+- by adding notes we shift all following notes
+because MIDI works with relative times
 
-=> modifier le code pour utiliser
-    F.toAbsoluteTime() et F.toDeltaTime()
-    pour travailler en temps absolu
+=> change your code to use
+    F.toAbsoluteTime() and F.toDeltaTime()
+    to work in absolute and relative times
 
 
-Structure MIDI
+MIDI Structure
 { header: { ... },
   tracks: [
     [
@@ -30,7 +31,7 @@ Structure MIDI
 
 function transpose (note, dtime, interval) {
   return F.extend(note, {
-    // attributs à remplacer
+    // attributes to replace
   })
 }
 

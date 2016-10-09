@@ -1,16 +1,15 @@
 /**
-Objectif: afficher dans la page la liste des notes au format texte en respectant la structure de code ci-dessous.
-Pour cela il faut convertir un tableau de notes sous forme d'entiers vers du texte puis ajouter ce texte dans le dom (dans <div id="output" />)
-Vous allez devoir définir les fonctions curryées map(), join() et addToDomElt()
+Goal: display in the page the list of notes as text.
+You will need to convert the array of notes as integers to text then to add this text to the dom (in <div id="output" />)
+You will need to define the curried functions map(), join(), and addToDomElt()
 
-
-Astuce: vous pouvez développer vos fonctions curriées à la main ou utiliser l'api F.curry
+Tips & Tricks: you can develop your own curried functions by hand or use F.curry()
 */
 
 var notes = [1,2,3];
 
 function noteValueToText(note) {
-  var notes = [ 'do', 'ré', 'mi', 'fa' , 'sol', 'la', 'si'];
+  var notes = [ 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
   return notes[note % 7];
 }
 

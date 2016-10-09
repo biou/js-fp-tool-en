@@ -1,7 +1,7 @@
 /*
-Objectif: utiliser les promises pour jouer la track
+Goal: use promises to play the track
 
-Astuce: penser aux cas d'erreur
+Tips: think about error cases
 */
 var promise = F.loadRemote('midi/sml.mid');
 

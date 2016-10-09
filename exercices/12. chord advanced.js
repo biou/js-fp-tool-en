@@ -1,6 +1,6 @@
 /**
-Objectif: programmer un effet chord avancé, prenant en paramètre des gammes prédéfinies et faire que l'ensemble sonne bien.
-Pour info: level hardcore ;)
+Goal: code an advanced chord effect, with predefined scales as parameters 
+FYI: hardcode mode ;)
 
 
 Structure MIDI

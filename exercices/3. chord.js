@@ -1,10 +1,10 @@
 /**
-Objectif: modifier la track 0 de `midi` 
-pour remplacer chaque note par un accord {note, note + 1 ton, note + 2 tons}
+Goal: change track 0 of `midi`
+to replace each note by a chord {note, note + 1 tone, note + 2 tones}
 
-Astuce: en midi, +1 sur un noteNumber augmente la note d'un demi-ton.
+Tips & tricks: +1 on a noteNumber increases the note of a semitone.
 
-Structure MIDI
+MIDI Structure
 { header: { ... },
   tracks: [
     [
@@ -21,7 +21,7 @@ Structure MIDI
 
 function transpose (note, interval) {
   return F.extend(note, {
-    // attributs à remplacer
+    // attributes to replace
   })
 }
 

@@ -1,10 +1,10 @@
-// start coding !
+// start coding!
 
-console.log("j'apparais dans la console :)");
+console.log("Displayed in the console :)");
 
 debugger;
 
 console.log(F);
 
-console.log("ici aussi");
+console.log("Here too");
 
